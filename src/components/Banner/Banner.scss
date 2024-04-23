@@ -1,0 +1,57 @@
+@import '../../assets/styles/variables';
+
+.banner {
+  position: relative;
+  height: 360px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  .inner {
+    padding: 0 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+
+    .title,
+    .sub-title {
+      color: #fff;
+    }
+
+    .title {
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .sub-title {
+      font-size: 2em;
+      font-weight: 600;
+    }
+
+    .search-form {
+      position: relative;
+      margin-top: 50px;
+
+      .form-control {
+        width: 100%;
+        box-sizing: border-box;
+        height: 46px;
+        line-height: 46px;
+        font-size: 1.1em;
+        color: rgba(0,0,0,0.5);
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+      }
+
+      .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

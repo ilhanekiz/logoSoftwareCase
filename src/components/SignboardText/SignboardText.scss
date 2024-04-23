@@ -1,0 +1,163 @@
+@import '../../assets/styles/variables';
+
+.signboard-text {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .head {
+    color: #fff;
+
+    .title {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+
+      a {
+        color: #fff;
+        font-weight: 700;
+        margin-right: 8px;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      span {
+        font-weight: 400;
+        opacity: 0.7;
+      }
+    }
+
+    .sub-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .box {
+        border: 1px solid rgba(255,255,255,0.6);
+        padding: 3px;
+        margin-right: 10px;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        
+        li {
+          display: inline-block;
+          margin-right: 5px;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .badges {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .text {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 700;
+      margin-right: 18px;
+      color: #fff;
+    }
+
+    .circular {
+      cursor: pointer;
+      transition: all .5s;
+      margin-right: 5px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .text-link {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-weight: 600;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      > img {
+        width: 23px;
+      }
+    }
+  }
+
+  .descriptions {
+    .info,
+    .title,
+    .text {
+      color: #fff;
+    }
+
+    .info,
+    .text {
+      opacity: 0.7;
+    }
+
+    .info {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .text {
+      font-size: 1em;
+      line-height: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .identity-disc {
+      li {
+        display: inline-block;
+        width: calc(100% / 3);
+        margin-bottom: 20px;
+
+        a,
+        span {
+          color: #fff;
+          line-height: 1.4em;
+        }
+
+        a {
+          display: inline-block;
+          font-size: 1em;
+          font-weight: 700;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        span {
+          display: block;
+          font-size: 0.9em;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

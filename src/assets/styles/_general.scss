@@ -1,0 +1,26 @@
+@import '../styles/variables';
+
+html,
+body {
+  font-family: "Sans Pro", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: $container;
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 64px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

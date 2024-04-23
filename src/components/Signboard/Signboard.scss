@@ -1,0 +1,90 @@
+@import '../../assets/styles/variables';
+
+.signboard {
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .img-inner {
+    position: relative;
+
+    .big-size-icon {
+      display: flex;
+      align-items: center;
+      transition: all .5s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+  
+      > span {
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+      }
+    }
+  
+    .img-content {
+      img {
+        display: block;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all .5s;
+      }
+    }
+  }
+
+  &:hover {
+    .img-content {
+      img {
+        filter: blur(6px);
+      }
+    }
+
+    .big-size-icon {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .link {
+    background-color: $blue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+
+    .logo {
+      width: 36px;
+      margin-right: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      .title {
+        font-weight: 400;
+        margin-bottom: 2px;
+        opacity: 0.8;
+      }
+
+      .title,
+      .sub-title {
+        font-size: 1em;
+        display: block;
+        color: #fff;
+      }
+
+      .sub-title {
+        font-weight: 600;
+      }
+    }
+  }
+}

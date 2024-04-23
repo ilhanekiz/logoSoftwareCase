@@ -1,0 +1,37 @@
+.poster {
+  cursor: pointer;
+  
+  .img-content {
+    position: relative;
+
+    .banner {
+      box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+      min-height: calc(150px * 1.5);
+      height: calc(150px * 1.5);
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .circular {
+      position: absolute;
+      z-index: 10;
+      bottom: -20px;
+      left: 5px;
+    }
+  }
+
+  .text-content {
+    padding: 30px 10px 10px;    
+    .title {
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      display: block;
+      font-size: 1em;
+      color: rgba(0,0,0,0.6);
+    }
+  }
+}

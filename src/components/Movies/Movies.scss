@@ -1,0 +1,42 @@
+.movies {
+  padding-top: 20px;
+  transition: all .5s;
+
+  .movies-header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    .title {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+  }
+
+  .movies-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+
+    &.shadow {
+      &:after {
+        transition: all .5s;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+      }
+    }
+  }
+
+  .poster {
+    max-width: 200px;
+    margin: 20px;
+  }
+}

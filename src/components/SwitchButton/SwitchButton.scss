@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables';
+
+.switch-button {
+  display: inline-block;
+  padding: 0;
+  border: 1px solid $primary-color;
+  border-radius: 30px;
+
+  > li {
+    display: inline-block;
+
+    a {
+      font-weight: 600;
+      color: $primary-color;
+      display: inline-block;
+      line-height: 100%;
+      padding: 6px 16px;
+    }
+
+    &.active {
+      a {
+        background-color: $primary-color;
+        border-radius: 30px;
+        color: $green;  
+      }
+    }
+  }
+}

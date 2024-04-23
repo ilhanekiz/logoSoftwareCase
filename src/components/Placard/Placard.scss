@@ -1,0 +1,20 @@
+.placard {
+  position: relative;
+  padding: 30px 0;
+
+  >.container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom right, rgba(16.47%, 16.08%, 17.65%, 1.00), rgba(16.47%, 16.08%, 17.65%, 0.84));
+  }
+}

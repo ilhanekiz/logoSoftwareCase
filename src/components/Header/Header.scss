@@ -1,0 +1,91 @@
+@import '../../assets/styles/variables';
+
+#header {
+  transition: all .3s;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  background-color: $primary-color;
+  height: 64px;
+
+  &.rollup {
+    top: -64px;
+  }
+
+  nav {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 154px;
+        margin-right: 16px;
+
+        > a {
+          width: 154px;
+        }
+      }
+    
+      .menu-list {
+        margin: 0;
+        padding: 0;
+
+        > li {
+          position: relative;
+          display: inline-block;
+          margin-right: 16px;
+          padding: 15px 0;
+
+          &:hover {
+            > ul {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          > a {
+            color: #fff;
+            font-weight: 600;
+          }
+
+          > ul {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0.2s, opacity 0.3s linear;
+            padding: 10px 0;
+            min-width: 160px;
+            position: absolute;
+            z-index: 10;
+            top: 45px;
+            left: -10px;
+            background-color: #fff;
+            border-radius: 3px;
+
+            > li {
+              padding: 8px 15px;
+              cursor: pointer;
+
+              &:hover {
+                background-color: $gray;
+              }
+
+              > a {
+                color: $black-light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .search {
+    width: 30px;
+  }
+}
